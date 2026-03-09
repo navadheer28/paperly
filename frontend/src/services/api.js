@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
-  timeout: 300000 // 5 minutes
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  timeout: 300000
 })
 
 export const compressPDF = (file, quality, onProgress) => {
@@ -12,8 +12,10 @@ export const compressPDF = (file, quality, onProgress) => {
 
   return API.post('/pdf/compress', formData, {
     onUploadProgress: (e) => {
-      const percent = Math.round((e.loaded * 100) / e.total)
-      onProgress(percent)
+      if (onProgress) {
+        const percent = Math.round((e.loaded * 100) / e.total)
+        onProgress(percent)
+      }
     }
   })
 }
@@ -29,6 +31,10 @@ export const splitPDF = (file, pages) => {
   formData.append('file', file)
   formData.append('pages', pages)
   return API.post('/pdf/split', formData)
+}
+
+export const mergeOutputs = (filenames) => {
+  return API.post('/pdf/merge-outputs', { filenames })
 }
 
 export const ocrPDF = (file) => {
