@@ -48,7 +48,7 @@ router.post('/compress', upload.single('file'), async (req, res) => {
     const compressedSize = fs.statSync(outputPath).size
     res.json({
       success: true,
-      downloadUrl: `http://localhost:5000/${outputPath}`,
+      downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}`,
       originalSize,
       compressedSize,
       savedPercent: Math.round((1 - compressedSize / originalSize) * 100)
@@ -65,7 +65,7 @@ router.post('/merge', upload.array('files', 20), async (req, res) => {
     const outputPath = `outputs/${uuidv4()}.pdf`
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/merge.py', [inputPaths, outputPath])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -81,7 +81,7 @@ router.post('/split', upload.single('file'), async (req, res) => {
     await runPython('./python/split.py', [inputPath, outputDir, pages])
     const files = fs.readdirSync(outputDir).map(f => ({
       name: f,
-      downloadUrl: `http://localhost:5000/${outputDir}${f}`
+      downloadUrl: `https://paperly-3w5i.onrender.com/${outputDir}${f}`
     }))
     res.json({ success: true, files })
   } catch (err) {
@@ -112,7 +112,7 @@ router.post('/to-word', upload.single('file'), async (req, res) => {
     const outputPath = `outputs/${uuidv4()}.docx`
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/to_word.py', [inputPath, outputPath])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -125,7 +125,7 @@ router.post('/to-excel', upload.single('file'), async (req, res) => {
     const outputPath = `outputs/${uuidv4()}.xlsx`
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/to_excel.py', [inputPath, outputPath])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -139,7 +139,7 @@ router.post('/rotate', upload.single('file'), async (req, res) => {
     const degrees = req.body.degrees || 90
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/rotate.py', [inputPath, outputPath, degrees])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -153,7 +153,7 @@ router.post('/watermark', upload.single('file'), async (req, res) => {
     const { text, opacity, position, color } = req.body
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/watermark.py', [inputPath, outputPath, text, opacity, position, color || 'gray'])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -167,7 +167,7 @@ router.post('/protect', upload.single('file'), async (req, res) => {
     const { password } = req.body
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/protect.py', [inputPath, outputPath, password])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -181,7 +181,7 @@ router.post('/unlock', upload.single('file'), async (req, res) => {
     const { password } = req.body
     if (!fs.existsSync('outputs/')) fs.mkdirSync('outputs/')
     await runPython('./python/unlock.py', [inputPath, outputPath, password])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -196,7 +196,7 @@ router.post('/create-from-text', async (req, res) => {
     const tempFile = `uploads/${uuidv4()}.txt`
     fs.writeFileSync(tempFile, content, 'utf-8')
     await runPython('./python/create_pdf.py', [tempFile, outputPath])
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -214,7 +214,7 @@ router.post('/to-jpg', upload.single('file'), async (req, res) => {
 
     const files = fs.readdirSync(outputDir).map(f => ({
       name: f,
-      downloadUrl: `http://localhost:5000/${outputDir}${f}`
+      downloadUrl: `https://paperly-3w5i.onrender.com/${outputDir}${f}`
     }))
 
     res.json({ success: true, files })
@@ -232,7 +232,7 @@ router.post('/jpg-to-pdf', upload.array('files', 20), async (req, res) => {
 
     await runPython('./python/jpg_to_pdf.py', [inputPaths, outputPath])
 
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -247,7 +247,7 @@ router.post('/word-to-pdf', upload.single('file'), async (req, res) => {
 
     await runPython('./python/word_to_pdf.py', [inputPath, outputPath])
 
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -263,7 +263,7 @@ router.post('/page-numbers', upload.single('file'), async (req, res) => {
 
     await runPython('./python/page_numbers.py', [inputPath, outputPath, position, startNumber, fontSize])
 
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -278,7 +278,7 @@ router.post('/to-ppt', upload.single('file'), async (req, res) => {
 
     await runPython('./python/to_ppt.py', [inputPath, outputPath])
 
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
@@ -294,7 +294,7 @@ router.post('/merge-outputs', async (req, res) => {
     const inputPaths = filePaths.join(',')
     await runPython('./python/merge.py', [inputPaths, outputPath])
 
-    res.json({ success: true, downloadUrl: `http://localhost:5000/${outputPath}` })
+    res.json({ success: true, downloadUrl: `https://paperly-3w5i.onrender.com/${outputPath}` })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
   }
