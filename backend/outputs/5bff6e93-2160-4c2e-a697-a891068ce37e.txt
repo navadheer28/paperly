@@ -1,0 +1,1178 @@
+
+--- Page 1 ---
+Module - 4 
+Cloud Cost Management - Cost Structure, Total Cost of Ownership (TCO) vs. 
+Cloud Costs, Importance of Cost Optimization, Cost Tracking and Analysis - 
+Cloud Billing and Cost Allocation, Cloud Cost Dashboards and Reporting, 
+Identifying Cost Drivers and Anomalies, Cost Optimization Strategies - 
+Rightsizing Resources: VMs, Storage, and Databases, Cloud Cost Tools and 
+Services - Cloud Cost Management Tools (e.g., AWS Cost Explorer, Azure Cost 
+Management) 
+CLOUD COST MANAGEMENT 
+ Cloud cost management is crucial for businesses leveraging cloud services to 
+ensure they optimize their expenses while maintaining the necessary 
+resources for their operations.  
+ Understanding the cost structure of cloud services is fundamental to 
+managing these costs effectively.  
+ The primary components of a typical cloud cost structure: 
+1. Compute Costs 
+Compute costs are usually the largest portion of cloud expenses and include the 
+cost of virtual machines (VMs), containers, and serverless functions. Key factors 
+influencing compute costs are: 
+ Instance Type and Size: Different VM types (e.g., general-purpose, 
+compute-optimized, memory-optimized) and sizes (e.g., small, medium, 
+large) have different pricing. 
+ Usage Duration: Billed based on the amount of time instances are running. 
+This can be per second, minute, or hour. 
+ Reserved Instances and Savings Plans: Discounts are available for 
+committing to use a certain amount of compute resources for a longer 
+period (e.g., 1 or 3 years). 
+ Auto-scaling: Dynamically adjusts the number of running instances based 
+on demand, which can optimize costs by scaling down during low usage 
+periods. 
+2. Storage Costs 
+Storage costs include expenses related to storing data on the cloud. 
+
+--- Page 2 ---
+ Type of Storage: Costs vary by storage type (e.g., SSDs vs. HDDs) and 
+storage class (e.g., standard, infrequent access, archival). 
+ Amount of Data Stored: Generally charged per GB per month. 
+ Data Transfer Costs: Fees for data egress (data leaving the cloud), though 
+ingress (data entering the cloud) is often free. 
+ Storage Operations: Charges for operations like reads and writes, which 
+can vary based on the storage service used. 
+3. Network Costs 
+Networking costs involve expenses associated with data transfer within the cloud 
+and between the cloud and external destinations. 
+ Data Egress: Costs for transferring data out of the cloud provider’s 
+network. 
+ Data Ingress: Usually free but can incur costs if using specific network 
+services. 
+ Inter-region Data Transfer: Costs for data transfer between different 
+geographical regions. 
+ Content Delivery Network (CDN): Costs for distributing content 
+globally, which includes data transfer fees and request charges. 
+4. Database Costs 
+Database services, both managed (e.g., Amazon RDS, Google Cloud SQL) and 
+unmanaged, incur various costs: 
+ Instance Type and Size: Similar to compute costs, database instance types 
+and sizes impact costs. 
+ Storage Capacity: Amount of data stored in the database. 
+ Backup and Replication: Additional costs for automated backups and 
+data replication across regions for redundancy. 
+ Queries and Transactions: Charges based on the number and complexity 
+of queries and transactions executed. 
+5. Support and Management Costs 
+
+--- Page 3 ---
+ Support Plans: Costs for different levels of support (e.g., basic, developer, 
+business, enterprise) which provide varying degrees of technical support 
+and response times. 
+ Management Tools: Charges for using tools that help manage and monitor 
+cloud infrastructure (e.g., AWS CloudWatch, Azure Monitor). 
+6. Security and Compliance Costs 
+ Identity and Access Management: Costs associated with user 
+authentication and authorization services. 
+ Security Services: Expenses for security services such as firewalls, DDoS 
+protection, encryption services, and compliance auditing. 
+Strategies for Effective Cloud Cost Management 
+1. Right-sizing Resources: Continuously monitor and adjust the size of 
+compute instances to match workload requirements. 
+2. Using Reserved Instances: Take advantage of discounts for long-term 
+commitments to specific resources. 
+3. Auto-scaling: Implement auto-scaling to ensure resources are used 
+efficiently based on demand. 
+4. Storage Tiering: Use different storage classes for different data types 
+based on access frequency. 
+5. Monitoring and Optimization Tools: Utilize cloud cost management and 
+monitoring tools to gain insights into spending and optimize resource 
+utilization. 
+6. Regular Audits: Conduct regular cost audits to identify and eliminate 
+underutilized or idle resources. 
+By understanding and actively managing these components of cloud cost 
+structure, organizations can optimize their cloud expenditures and achieve greater 
+cost efficiency.  
+ 
+ 
+
+--- Page 4 ---
+ 
+ 
+ 
+ 
+ 
+TOTAL COST OF OWNERSHIP (TCO) 
+ The Total Cost of Ownership (TCO) in the context of cloud computing is 
+a comprehensive estimate of the direct and indirect costs associated with 
+the use of cloud services over a given period.  
+ It includes not only the initial expenses but also the ongoing operational 
+costs, and it can be compared to the costs of traditional on-premises 
+infrastructure to determine the most cost-effective approach.  
+ A detailed breakdown of the components of TCO for cloud computing: 
+1. Direct Costs 
+1.1 Compute Costs 
+ Instance Usage: The cost of running virtual machines (VMs), containers, 
+and serverless functions. 
+ Instance Types and Sizes: Different types and sizes of instances (e.g., 
+standard, high-memory, GPU) incur varying costs. 
+ Reserved Instances/Savings Plans: Discounts obtained by committing to 
+a certain amount of compute usage over one or three years. 
+1.2 Storage Costs 
+ Primary Storage: Costs for different storage types (e.g., SSD, HDD) and 
+storage classes (e.g., standard, infrequent access, archival). 
+ Data Transfer: Charges for data egress and inter-region data transfers. 
+ Operations: Costs associated with read/write operations, data retrieval, 
+and data management. 
+
+--- Page 5 ---
+1.3 Network Costs 
+ Bandwidth: Costs for data transfer between regions, to and from the 
+internet, and within the cloud provider’s network. 
+ CDN Services: Expenses for content delivery networks that distribute data 
+globally. 
+1.4 Database Costs 
+ Database Instances: Costs for managed database services based on 
+instance type and size. 
+ Storage and Backup: Costs for database storage, automated backups, and 
+data replication. 
+1.5 Additional Service Costs 
+ Managed Services: Costs for additional cloud services such as machine 
+learning, data analytics, and IoT. 
+ Support Plans: Charges for technical support at different levels (basic, 
+developer, business, enterprise). 
+2. Indirect Costs 
+2.1 Personnel Costs 
+ Training: Expenses for training IT staff to manage and optimize cloud 
+services. 
+ Management: Costs for personnel involved in monitoring, managing, and 
+maintaining cloud infrastructure. 
+2.2 Migration Costs 
+ Data Transfer: Costs associated with moving data and applications to the 
+cloud. 
+ Downtime: Potential revenue loss or additional costs due to downtime 
+during the migration process. 
+ Consulting Services: Expenses for third-party consultants who assist with 
+the migration. 
+
+--- Page 6 ---
+2.3 Security and Compliance 
+ Security Measures: Costs for implementing security measures such as 
+encryption, firewalls, and DDoS protection. 
+ Compliance: Expenses related to ensuring compliance with regulations 
+(e.g., GDPR, HIPAA). 
+3. Operational Costs 
+3.1 Continuous Optimization 
+ Monitoring Tools: Expenses for tools and services that monitor cloud 
+usage and performance (e.g., AWS CloudWatch, Azure Monitor). 
+ Optimization Efforts: Costs for continuous efforts to optimize cloud 
+resource usage and reduce waste. 
+3.2 Maintenance and Updates 
+ Software Updates: Costs for keeping cloud software and applications up 
+to date. 
+ Maintenance Contracts: Expenses for maintenance services and support 
+contracts. 
+4. Risk Management Costs 
+ Disaster Recovery: Costs for implementing disaster recovery plans and 
+backup solutions. 
+ Redundancy: Expenses for ensuring high availability and fault tolerance 
+through redundant systems. 
+Calculating TCO for Cloud vs. On-Premises 
+To determine the TCO of cloud infrastructure versus traditional on-premises 
+infrastructure, consider the following steps: 
+1. Identify All Relevant Costs: Include all direct, indirect, operational, and 
+risk management costs. 
+2. Estimate Over a Relevant Time Period: Typically, a 3-5 year period is 
+used for TCO analysis. 
+
+--- Page 7 ---
+3. Compare Against On-Premises Costs: Factor in on-premises costs such 
+as hardware, software, facilities, utilities, and personnel. 
+4. Include Opportunity Costs: Consider the potential revenue opportunities 
+or productivity gains enabled by the cloud. 
+Benefits of TCO Analysis 
+ Informed Decision Making: Helps businesses make informed decisions 
+about cloud adoption or migration. 
+ Cost Efficiency: Identifies potential cost savings and areas for 
+optimization. 
+ Strategic Planning: Aids in long-term strategic planning and budgeting 
+for IT resources. 
+By performing a detailed TCO analysis, organizations can better understand the 
+financial implications of moving to the cloud and make decisions that align with 
+their business objectives and financial constraints. 
+Total Cost of Ownership (TCO) Vs. cloud costs. 
+When evaluating cloud computing against traditional on-premises infrastructure, 
+it's essential to consider both Total Cost of Ownership (TCO) and cloud costs. 
+While cloud costs refer specifically to the expenses associated with using cloud 
+services, TCO encompasses all costs related to owning and operating an IT 
+infrastructure over its entire lifecycle. Here’s a comparison to help distinguish 
+between the two and understand their implications: 
+Total Cost of Ownership (TCO) 
+TCO is a comprehensive assessment that includes all direct and indirect costs 
+associated with purchasing, deploying, operating, and maintaining an IT 
+infrastructure. This includes both initial capital expenditures (CapEx) and 
+ongoing operational expenditures (OpEx). 
+Components of TCO: 
+1. Initial Capital Costs (CapEx): 
+o Hardware: Purchase of servers, storage devices, networking 
+equipment, etc. 
+
+--- Page 8 ---
+o Software: Licensing fees for operating systems, applications, and 
+other software. 
+o Facilities: Costs related to physical space, power, cooling, and 
+security for data centers. 
+2. Operational Costs (OpEx): 
+o Maintenance: Regular maintenance and repairs of hardware and 
+infrastructure. 
+o Utilities: Power, cooling, and other utility costs for running a data 
+center. 
+o Personnel: Salaries and benefits for IT staff responsible for 
+managing the infrastructure. 
+o Support: Technical support contracts and warranties. 
+o Upgrades: Periodic upgrades to hardware and software to keep the 
+infrastructure current. 
+3. Indirect Costs: 
+o Downtime: Costs associated with system outages and downtime. 
+o Disaster Recovery: Expenses for disaster recovery solutions and 
+backups. 
+o Compliance: Costs for ensuring compliance with regulatory 
+requirements. 
+Cloud Costs 
+Cloud costs refer specifically to the expenses incurred when using cloud services 
+provided by third-party cloud vendors like AWS, Azure, or Google Cloud. These 
+costs are typically operational expenditures (OpEx), and they can be more 
+flexible and scalable compared to traditional on-premises infrastructure costs. 
+Components of Cloud Costs: 
+1. Compute Costs: 
+
+--- Page 9 ---
+o Instance Usage: Pay-as-you-go charges for virtual machines, 
+containers, or serverless functions based on usage time and 
+resources. 
+o Reserved Instances/Savings Plans: Discounts for committing to a 
+specific amount of compute usage over a longer period. 
+2. Storage Costs: 
+o Data Storage: Charges based on the amount and type of data stored. 
+o Data Transfer: Costs for data transfer out of the cloud and between 
+regions. 
+3. Network Costs: 
+o Bandwidth: Costs associated with data transfer and networking 
+within the cloud environment. 
+4. Database Costs: 
+o Managed Database Services: Costs based on the type, size, and 
+usage of database instances. 
+o Operations: Charges for database transactions and queries. 
+5. Additional Service Costs: 
+o Managed Services: Fees for using additional cloud services like 
+machine learning, data analytics, and IoT. 
+o Support Plans: Costs for different levels of technical support. 
+Comparing TCO and Cloud Costs 
+Initial Investment: 
+ TCO: Requires significant upfront capital investment in hardware, 
+software, and infrastructure. 
+ Cloud Costs: Minimal initial investment, primarily pay-as-you-go model, 
+shifting costs to operational expenses. 
+Scalability and Flexibility: 
+ TCO: Limited by physical infrastructure; scaling up requires additional 
+capital investment and time. 
+
+--- Page 10 ---
+ Cloud Costs: Highly scalable; resources can be adjusted dynamically 
+based on demand, providing flexibility. 
+Maintenance and Upgrades: 
+ TCO: Requires ongoing maintenance, upgrades, and management by in-
+house IT staff. 
+ Cloud Costs: Maintenance and upgrades are managed by the cloud 
+provider, reducing the burden on in-house staff. 
+Cost Predictability: 
+ TCO: More predictable over the long term with fixed costs for hardware 
+and facilities, but can have variable maintenance and upgrade costs. 
+ Cloud Costs: Can be variable and sometimes unpredictable due to 
+fluctuating usage, but tools and plans are available to manage and forecast 
+costs. 
+Personnel and Management: 
+ TCO: Requires a dedicated team for infrastructure management, including 
+maintenance, security, and compliance. 
+ Cloud Costs: Reduces the need for a large in-house IT team as many 
+management tasks are handled by the cloud provider. 
+Making the Decision 
+1. Evaluate Business Needs: Consider your organization’s specific needs for 
+flexibility, scalability, and budget constraints. 
+2. Cost Analysis: Perform a detailed cost analysis comparing TCO for on-
+premises infrastructure and expected cloud costs over a similar period. 
+3. Long-Term Strategy: Align the decision with your long-term IT and 
+business strategy, considering factors like growth, technological 
+advancements, and market changes. 
+By understanding the differences between TCO and cloud costs, organizations 
+can make informed decisions about their IT infrastructure, balancing cost 
+efficiency, scalability, and operational needs.  
+ 
+
+--- Page 11 ---
+ 
+ 
+ 
+ 
+ 
+ 
+IMPORTANCE OF COST OPTIMIZATION 
+ Cost optimization is a strategic approach that organizations use to manage 
+and reduce expenses while maximizing business value and operational 
+efficiency.  
+ Cost optimization plays a crucial role in various aspects of a business, from 
+financial health to competitive advantage.  
+ Here are some key reasons why cost optimization is important: 
+1. Enhanced Profitability: 
+ By reducing unnecessary costs and improving efficiency, businesses can 
+significantly increase their profit margins.  
+ This is especially critical in highly competitive markets where price 
+sensitivity is high. 
+2. Sustainable Growth: 
+ Efficient use of resources ensures that the organization can scale 
+sustainably.  
+ Cost optimization allows businesses to invest more in growth opportunities 
+such as research and development, marketing, and expansion without 
+compromising financial stability. 
+3. Competitive Advantage: 
+
+--- Page 12 ---
+ Companies that manage costs effectively can offer products or services at 
+lower prices or with better features, gaining a competitive edge in the 
+market. 
+4. Risk Management: 
+ Cost optimization involves evaluating and mitigating financial risks.  
+ By understanding and controlling costs, businesses can better withstand 
+economic downturns or unexpected financial challenges. 
+5. Improved Cash Flow: 
+ Reducing costs improves cash flow, allowing the organization to reinvest 
+in key areas, pay down debt, or build a financial cushion for future needs. 
+6. Resource Allocation: 
+ Efficient cost management ensures that resources are allocated to the most 
+productive and strategic areas of the business, enhancing overall 
+operational efficiency. 
+7. Stakeholder Confidence: 
+ Demonstrating a commitment to cost control can build confidence among 
+investors, shareholders, and creditors, as it reflects prudent financial 
+management. 
+8. Environmental and Social Responsibility: 
+ Cost optimization can lead to more sustainable practices, such as reducing 
+waste and improving energy efficiency.  
+ This not only cuts costs but also aligns with broader corporate social 
+responsibility (CSR) goals. 
+9. Employee Morale: 
+
+--- Page 13 ---
+ Effective cost management can free up resources to invest in employee 
+development, benefits, and workplace improvements, leading to higher 
+morale and productivity. 
+10. Innovation and Flexibility: 
+ By optimizing costs, companies can free up resources to invest in 
+innovation. This allows businesses to be more agile and responsive to 
+market changes and opportunities. 
+In summary, cost optimization is a vital practice for maintaining the financial 
+health of an organization, enabling growth, improving competitiveness, and 
+ensuring long-term sustainability. It is an ongoing process that requires regular 
+review and adjustment to align with the dynamic business environment. 
+ 
+COST TRACKING 
+Cost tracking and analysis are critical components of effective financial 
+management within an organization. They involve monitoring, recording, and 
+analysing expenses to ensure they align with budgetary constraints and 
+organizational goals. Here’s a detailed look at how cost tracking and analysis can 
+be conducted: 
+1. Establishing a Cost Structure: 
+Categorization: Define categories for various types of costs such as fixed, 
+variable, direct, and indirect costs. 
+Chart of Accounts: Create a comprehensive chart of accounts to classify and 
+record transactions consistently. 
+2. Implementing a Tracking System: 
+Software Tools: Use accounting software or Enterprise Resource Planning 
+(ERP) systems to automate and streamline cost tracking. 
+Expense Reports: Implement standardized expense reporting procedures for 
+employees to capture and record costs accurately. 
+3. Data Collection: 
+
+--- Page 14 ---
+Invoice and Receipts Management: Maintain a system for collecting and 
+storing invoices and receipts for all expenses. 
+Time Tracking For labor costs, use time tracking tools to record the amount of 
+time employees spend on different projects or tasks. 
+ 
+4. Real-Time Monitoring: 
+Dashboards: Develop real-time dashboards to monitor ongoing costs and 
+compare them against budgets. 
+Alerts and Notifications: Set up alerts to notify management when spending 
+exceeds certain thresholds. 
+ 
+COST ANALYSIS 
+1. Variance Analysis: 
+Budget vs. Actual: Compare actual expenses to budgeted amounts to identify 
+variances. 
+Root Cause Analysis: Investigate significant variances to understand their 
+causes and take corrective actions. 
+2. Trend Analysis: 
+Historical Data: Analyze historical cost data to identify trends and patterns over 
+time. 
+Seasonal Variations: Consider seasonal factors that might influence cost 
+fluctuations. 
+3. Cost Allocation: 
+Activity-Based Costing (ABC): Allocate costs to specific activities or projects 
+to determine the true cost of operations. 
+Overhead Allocation: Distribute overhead costs accurately across different 
+departments or products. 
+4. Profitability Analysis: 
+
+--- Page 15 ---
+   Product/Service Profitability: Evaluate the profitability of different products 
+or services by comparing their revenue against associated costs. 
+Customer Profitability: Analyze costs associated with serving different 
+customer segments to determine their profitability. 
+5. Benchmarking: 
+Industry Standards: Compare costs against industry benchmarks to gauge 
+efficiency. 
+Best Practices: Identify and adopt best practices from industry leaders to 
+improve cost management. 
+6. Scenario Analysis: 
+What-If Scenarios: Conduct what-if analyses to understand the impact of 
+various cost changes on the overall financial health. 
+Forecasting: Use predictive analytics to forecast future costs and plan 
+accordingly. 
+Tools and Techniques 
+1. Spreadsheet Software: 
+   - Utilize tools like Microsoft Excel or Google Sheets for basic cost tracking and 
+analysis, incorporating formulas, pivot tables, and charts for detailed insights. 
+2. Business Intelligence (BI) Tools: 
+   - Implement BI tools such as Tableau, Power BI, or QlikView to visualize cost 
+data and generate interactive reports. 
+3. ERP Systems: 
+   - Use ERP systems like SAP, Oracle, or Microsoft Dynamics for 
+comprehensive cost tracking and integration across various business processes. 
+4. Project Management Tools: 
+   - Leverage project management tools like Asana, Trello, or Jira to track project-
+specific costs and ensure alignment with project budgets. 
+Best Practices 
+1. Regular Review and Reporting: 
+
+--- Page 16 ---
+   - Conduct regular cost reviews and produce detailed reports for stakeholders to 
+ensure transparency and accountability. 
+2. Continuous Improvement: 
+   - Implement a continuous improvement approach to cost management, 
+regularly seeking ways to optimize and reduce costs without compromising 
+quality. 
+3. Training and Education 
+   - Provide training for employees on cost tracking tools and techniques to ensure 
+accurate data entry and reporting. 
+4. Cross-Functional Collaboration: 
+   - Foster collaboration between departments to ensure a holistic approach to cost 
+management and avoid siloed decision-making. 
+By diligently tracking and analyzing costs, organizations can gain valuable 
+insights into their financial operations, identify opportunities for savings, and 
+make informed decisions that enhance overall profitability and efficiency. 
+CLOUD BILLING 
+ Cloud billing is the procedure of producing and sending invoices for using 
+cloud services to customers.  
+ Most cloud provider carriers provide special billing reports, permitting 
+groups to apprehend their intake patterns.  
+ These reports provide data on the resources used, the time period of 
+utilization, and associated expenses.  
+ By comprehensively studying these reports, companies can benefit from 
+insights into their expenditure and make informed decisions to optimize 
+their utilization and reduce costs. 
+Key Concepts 
+ Pay-as-You-Go: Most cloud providers charge based on usage, meaning 
+you pay only for what you use. 
+ Reserved Instances: Discounts for committing to use certain resources 
+over a longer period. 
+
+--- Page 17 ---
+ Spot Instances: Lower-cost instances that can be terminated by the 
+provider at short notice. 
+ Billing Reports: Detailed reports provided by cloud providers that show 
+usage and costs. 
+Key Benefits of Cloud Billing 
+ Cost Transparency: Cloud billing presents designated insights into your 
+utilization, enabling you to understand where in your money is going. This 
+transparency is critical for budgeting and resource allocation. 
+ Cost Control: By intently monitoring your cloud utilization, you may 
+discover unused or underutilized resources. This information empowers 
+you to lessen or decommission such resources, leading to significant cost 
+savings. 
+ Forecasting and Budgeting: Cloud billing data may be used to forecast 
+future costs correctly. With this information, companies can create realistic 
+budgets and allocate resources efficaciously. 
+ Resource Optimization: Cloud billing reports utilization styles. By 
+understanding the pattern, companies can optimize their resources, 
+ensuring they pay only for what they need. 
+ Cost Allocation: For large businesses, cloud billing permits costs to be 
+allotted to different departments. This granular perception ensures that 
+each department is aware to its cloud usage and may plan its budget 
+correctly. 
+COST ALLOCATION 
+ Tags and Labels: Used to categorize resources for better cost tracking 
+(e.g., by project, department, or environment). 
+ Resource Groups: Grouping related resources to simplify management 
+and billing. 
+ Budgets and Alerts: Setting spending limits and alerts to monitor and 
+control costs. 
+
+--- Page 18 ---
+ Showback and Chargeback: Internal billing models where costs are 
+shown to or charged back to the respective departments or projects based 
+on their usage. 
+Implementing Cost Allocation 
+ Define Cost Centers: Identify and define the different cost centers within 
+your organization (e.g., departments, projects). 
+ Apply Tags and Labels: Develop a consistent tagging strategy and apply 
+tags to all resources. For example, tags could include “Environment: 
+Production”, “Project: X”, or “Department: IT”. 
+ Allocate Shared Costs: For shared resources, establish a fair method to 
+distribute costs. This could be based on usage, fixed percentages, or other 
+relevant metrics. 
+ Regular Reporting and Analysis: Generate regular reports to analyze 
+spending and identify trends. Use these insights to optimize resource 
+allocation and cost management. 
+ Adjust and Iterate: Continuously refine your cost allocation strategy 
+based on feedback and changing business needs. 
+Tools for Cloud Billing and Cost Allocation 
+    AWS: 
+ AWS Cost Explorer 
+ AWS Budgets 
+ AWS Cost and Usage Report 
+ AWS Tagging 
+    Google Cloud: 
+ Google Cloud Billing Reports 
+ Google Cloud Budgets and Alerts 
+ Google Cloud Cost Management Tools 
+ Google Cloud Labels 
+    Microsoft Azure: 
+
+--- Page 19 ---
+ Azure Cost Management and Billing 
+ Azure Budgets 
+ Azure Pricing Calculator 
+ Azure Resource Tags 
+Tips for Using Cloud Billing Effectively 
+ Regularly Review Billing Reports: Set up a agenda to study your cloud 
+billing reports regularly. This exercise facilitates you stay updated about 
+your costs and usages. 
+ Implement Budget Alerts: Most cloud se rvice provider companies offer 
+finances alert features. Utilize these signals to get hold of notifications 
+while your costs attain a targeted threshold. This proactive technique 
+permits you to take immediately action if prices exceed your limit. 
+ Embrace Automation: Implement automated tools and scripts to optimize 
+your cloud sources. Automation allows in scaling resources based on 
+demand, making sure you are now not overprovisioning and incurring 
+unnecessary prices. 
+ Collaborate Across Teams: Foster collaboration between IT, finance, and 
+operations groups. By running collectively, those departments can align 
+cloud utilization with business goal, making sure efficient resource 
+allocation and cost management. 
+ Regularly Update Your Cloud Strategy: Cloud technology have evolves 
+unexpectedly. Regularly verify your cloud strategy to ensure you are 
+utilizing the trendy features and services, optimizing prices, and improving 
+overall performance. 
+Best Practices for Using Cloud Billing to Monitor Your Costs 
+ Set Clear Budgets: Define particular budgets to your cloud services and 
+tasks. Regularly review and modify those budgets primarily based on 
+changing business needs and monetary goals. 
+ Utilize Alerts: Implement billing indicators to get hold of notifications 
+while costs approach or exceed the desired thresholds. Alerts let you take 
+timely actions to govern your spending. 
+
+--- Page 20 ---
+ Detailed Monitoring: Regularly display your cloud billing reviews. 
+Analyze them in detail to identify spending styles, resource usage 
+developments, and areas where expenses may be optimized. 
+ Resource Tagging: Tag your cloud resource appropriately, in particular in 
+multi-departmental or multi-undertaking environments. Tags permit 
+correct cost allocation, making it easier to discover cost associated with 
+particular projects or groups. 
+ Rightsizing Resources: Optimize your cloud resource with the aid of 
+deciding on the right instance sizes. Regularly verify your useful resource 
+usage and adjust configurations to healthy your actual workload 
+necessities. 
+ Implement Automation: Use automation tools and scripts to scale 
+resources based totally on demand. Automated scaling guarantees that 
+you’re now not over-provisioning sources, leading to pointless charges. 
+ Regular Review Meetings: Schedule regular conferences with relevant 
+groups to study billing reports. Collaboration among IT, finance, and 
+operations departments is essential to align cloud utilization with 
+budgetary constraints. 
+ Cloud Cost Management Tools: Explore third-party cloud cost 
+management equipment that offer extra capabilities and analytics to 
+optimize your cloud costs effectively. 
+How to Use Cloud Billing to Monitor Your Costs 
+Google Cloud Platform (GCP) offers strong tools and features that will help you 
+display your cost effectively. Here’s a step-by-step guide on how to use GCP’s 
+billing and cost monitor services: 
+Step 1: Access the GCP Console 
+Log in to your GCP account and get go to the GCP Console at 
+(https://console.Cloud.Google.Com/). 
+
+--- Page 21 ---
+ 
+Step 2: Go to the Billing Section 
+In the GCP Console, navigate to the billing section through clicking at the 
+hamburger menu (three horizontal lines) on the top left, then pick “Billing.” 
+ 
+Step 3: Set Up Your Billing Account 
+If you haven’t set up a billing account, follow the activates to create one. Provide 
+necessary info which includes billing name, address with, and payment 
+information. Once your billing account is set up, you may link your projects to it. 
+Step 4: Link Your Projects 
+Link your GCP project to the billing account. This step ensures that each one the 
+costs associated with those projects are consolidated and visible in a single region. 
+In the Billing section, click on on “Link a billing account,” then choose your 
+billing account and click on “Set Account.” 
+
+--- Page 22 ---
+ 
+Step 5: Access Billing Reports 
+In the Billing section, pick out “Reports” from the left menu. Here, you can find 
+various pre-configured reports displaying your cost and usage. Explore options 
+like “Cost Overview,” “Cost Details,” and “Custom Reports” to gain insights of 
+your spending patterns. 
+ 
+Step 6: Set Budgets and Alerts 
+Click on “Budgets & alerts” inside the Billing segment. Here, you may 
+installation budgets to restriction your spending for precise projects or resources. 
+Configure budget alerts to obtain notifications when your charges approach or 
+exceed the set limits. Click on “Create Budget” to set up your budget and alert 
+options. 
+
+--- Page 23 ---
+ 
+Step 7: Utilize Billing Export to BigQuery  
+If you want to carry out in-intensity evaluation of your billing information, kept 
+in mind exporting your billing data to BigQuery. This permits you to run SQL-
+like queries on your billing records, enabling particular and customized price 
+analysis. You can set up billing exports inside the Billing section under the 
+“Billing Export.” 
+ 
+Step 8: Implement Resource Optimization 
+Regularly evaluation your billing reports to discover underutilized resources. Use 
+tools like Google Cloud’s Rightsizing Recommendations to optimize example 
+sizes primarily based on utilization patterns. Implement automation scripts or 
+policies to scale resources up or down based totally on demand, making sure fee 
+efficiency. 
+Step 9: Monitor and Fine-Tune 
+
+--- Page 24 ---
+Regularly monitor your billing statistics, in particular in case your usage patterns 
+change. Adjust your budgets, alerts, and useful resource configurations for this 
+reason. Stay knowledgeable approximately GCP’s latest cost optimization 
+features and best practices to constantly fine-tune your setup. 
+Step 10: Collaborate and Review 
+Collaborate together with your team participants, in particular IT and finance, to 
+review billing reports and discuss various strategies. Conduct everyday opinions 
+to ensure alignment among your cloud spending and your organization’s financial 
+goals. 
+CLOUD COST DASHBOARDS AND REPORTING 
+Cloud Cost Dashboards provide full visibility of AWS cloud costs, allowing you 
+to monitor and manage your expenses effectively. 
+1. AWS Cost Intelligence Dashboard: 
+o An interactive and customizable Amazon Quick Sight dashboard 
+template. 
+o Part of the Cloud Intelligence Dashboards framework. 
+o Helps create the foundation for cost management, optimization, and 
+Cloud Financial Management (CFM) goal tracking. 
+o Visualizes and understands your AWS cost and usage data. 
+o Leverages AWS Cost and Usage Reports (CUR) for comprehensive 
+cost data. 
+o Includes hourly compute visualizations, storage visualizations, and 
+more. 
+o Used by companies to optimize spending and identify cost-saving 
+opportunities. 
+2. Other Cloud Cost Dashboards: 
+o All Accounts, All Regions, and All Resources Dashboards: 
+ Designed for AWS users with resources across multiple 
+accounts and regions. 
+ Provide intuitive, pre-built dashboards for cost visibility. 
+o Open Source Multi-Cloud CLI Collie: 
+ Allows building a cloud cost dashboard across AWS, 
+Microsoft Azure, and soon Google Cloud. 
+ Takes less than 10 minutes to set up and is completely free. 
+o CloudZero Dashboards: 
+ Offers pre-built and customizable dashboards tailored to 
+cloud cost reporting needs. 
+Cloud Cost Dashboards help you track, analyze, and optimize your cloud 
+spending, leading to better financial management and cost savings.  
+
+--- Page 25 ---
+ 
+Creating a open source-Cloud Cost Dashboard  
+ 
+ 
+ 
+ 
+ 
+Own Cloud Cost Dashboard! 
+ Leverage the power of our open-source Collie CLI and you have the 
+necessary cost data extracted within minutes. Duplicate our Google Data 
+Studio Dashboard, connect it to the CSV export  
+ 
+ 
+Cloud Reporting 
+ Reporting in the cloud involves collecting, analyzing, and presenting data 
+generated in a cloud environment so that it is easier to derive and share 
+valuable insights to support everyday business decisions. 
+ A subcategory of effective cloud management, cloud reporting comprises 
+a set of tools and monitoring best practices. 
+ Reporting tools ingest metrics, logs, events, and other metadata from a 
+variety of sources. These sources include cloud infrastructures, 
+microservices, containerized apps, and Kubernetes clusters.  
+ After enriching, analyzing, and normalizing the data, they present it as 
+easy-to-understand charts, graphs, tables, and other visual representations. 
+So, instead of these rows and columns of unusable numbers and letters… 
+
+--- Page 26 ---
+ 
+…what you get instead are meaningful insights: 
+ 
+ The tools enable users to report data in a static or interactive format. Most 
+cloud reporting tools also serve as cloud business intelligence tools, 
+enabling stakeholders to gain real-time insights and make timely decisions 
+on the fly. 
+Advantages Of Cloud Reporting Tools Vs. Traditional On-Premises Business 
+Reporting 
+Cloud-based reporting differs from traditional reporting tools in several ways. 
+With cloud reporting, you can: 
+ Get real-time insights into your cloud environment to govern it effectively. 
+ Reduce the costs of purchasing, installing, and maintaining on-premises 
+software. For a predictable subscription fee, cloud reporting vendors take 
+care of all the back-end work.  
+ You pay only for the capabilities you need when you need them.     
+
+--- Page 27 ---
+ Use automation to detect and report abnormal cloud activity before it 
+becomes a problem. 
+ Enhance collaboration between engineering and finance teams to optimize 
+cloud costs while providing best-in-class customer experiences.  
+ Share dashboards with anyone, wherever they are, as long as they have an 
+internet connection and valid credentials.   
+ Make sure you are using the latest, most secure, and most efficient version 
+of the cloud reporting tool you use.  
+ Share dashboard access with vendors to reconcile cloud reports. 
+ Build a real-time dashboard for each business process, such as cost per 
+customer and cost per project. 
+Cloud reporting platforms: 
+1. Cloud Cost Intelligence: CloudZero 
+ CloudZero is a modern, full-fledged cloud cost intelligence platform for 
+SaaS and tech brands. Engineers, finance professionals, and executives can 
+use it to track who, what, why, and where their cloud spend is going on 
+AWS 
+2. Traditional Cloud Cost Reporting: CloudHealth 
+ CloudHealth, VMware’s cloud cost management tool, provides several 
+reporting capabilities. 
+  CloudHealth may be a good option for you if you are looking for a 
+platform to combine cost reporting with security and compliance 
+management.  
+ It 
+also 
+offers 
+reporting 
+for 
+hybrid 
+cloud 
+and 
+multi-cloud 
+environments.         
+3. Traditional Cloud Cost Reporting: Cloudability 
+ Cloudability promises to help IT, DevOps, and finance teams optimize 
+cloud resources for cost, quality, and speed.  
+ The Cloudability dashboard lets you see your cloud costs at a high level, 
+configure Reserved Instances, switch between different accounts, and turn 
+off unused resources.  
+ You can also use it to rightsize your public cloud resources to minimize 
+costs.  
+4. Automated Detection And Response: Blumira 
+ Blumira also offers automated risk detection, known threat blocking, and 
+quick response.  
+ Blumira integrates seamlessly across cloud environments, identity 
+providers, such as Google Workstation, and endpoint protection solutions. 
+Blumira can help with CMMC, NIST 800-53, and FFIEC compliance.       
+5. Secure DevOps Platform: Sysdig 
+ It provides continuous infrastructure operational monitoring and security 
+reporting.  
+
+--- Page 28 ---
+ Integrate it with multiple platforms to extend its functionality, such as 
+SIEMs like ServiceNow and PagerDuty, registries like DockerHub, and 
+continuous integration and delivery (CI/CD) tools such as Jenkins and 
+Bamboo.   
+6. Cloud Infrastructure Security: Orca Security 
+ Orca Security provides agentless security in AWS, GCP, and Azure 
+clouds. It uses a cloud provider’s snapshot mechanism to get a read-only 
+view of data. Orca Security promises this has no performance implications 
+and is agnostic to VPCs, OS credentials, and machine run-states. 
+ The platform collects data directly from your cloud configuration and the 
+runtime block storage out-of-hand of the workload to enable you to fix 
+vulnerabilities, malware, misconfiguration, and more.        
+7. Cloud Infrastructure Reporting: SolarWinds 
+ Solarwinds provides a full-stack platform that lets you monitor and report 
+on your infrastructure health, network performance, and cloud security.  
+ The platform includes several tools you can use for specific tasks: 
+ AppOptics for infrastructure and application monitoring data  
+ Pingdom for websites and web applications reports 
+ Loggly for aggregating and analyzing logs, and 
+ Papertrail for viewing logs quickly. 
+8. Cloud Log Reporting: Sumo Logic  
+9. Infrastructure Health Reporting: Sematext 
+10. Full-stack APM Reporting: DataDog  
+11. Modern App Environment Reporting: New Relic 
+12. Root-cause APM Reporting – Dynatrace 
+13. Native Kubernetes Reporting: Kubernetes Dashboard 
+14. Open-Source Kubernetes Reporting Tool: The ELK Stack 
+15. Network Monitoring: Paessler PRTG 
+ 
+ 
+ 
+ 
+IDENTIFYING COST DRIVERS AND ANOMALIES 
+Identifying cost drivers and anomalies in cloud costs is essential for effective cost 
+management. Here are some steps you can take: 
+1. Set Transparent Budgets and Limits: 
+o Establish clear spending limits for your cloud resources. This helps 
+you track expenses and identify anomalies early on. 
+o Utilize cloud cost monitoring tools to set up budgets and receive 
+alerts when spending exceeds these limits1. 
+2. Use Anomaly Detection Tools: 
+o Leverage anomaly detection tools to continuously monitor cloud 
+expenditure. 
+
+--- Page 29 ---
+o These tools compare actual spending against historical data and use 
+machine learning algorithms to predict future costs. 
+o When actual spending significantly deviates from predictions, an 
+alert is triggered2. 
+3. AWS Cost Anomaly Detection (for AWS users): 
+o AWS offers automated cost anomaly detection and root cause 
+analysis. 
+o You can set up custom anomaly thresholds and receive alerts via 
+email or Amazon SNS. 
+o Dive deeper into cost drivers based on seasonally-aware patterns 
+(e.g., weekly) to minimize false positives 
+COMMON CLOUD COST DRIVERS: 
+1. Compute Resources: 
+o Virtual machines (VMs), containers, and serverless functions 
+contribute significantly to cloud costs. 
+o Oversized or underutilized instances can lead to unnecessary 
+expenses. 
+2. Storage: 
+o Storing data in cloud storage services (e.g., Amazon S3, Azure Blob 
+Storage) incurs costs. 
+o Frequent data access, data transfer, and backups impact expenses. 
+3. Data Transfer and Bandwidth: 
+o Transferring data between regions or across services can be costly. 
+o High network bandwidth usage increases charges. 
+4. Database Services: 
+o Running databases (e.g., Amazon RDS, Google Cloud SQL) 
+involves licensing and storage costs. 
+o Query complexity and data volume affect expenses. 
+5. Reserved Instances vs. On-Demand Instances: 
+o Choosing reserved instances (long-term commitment) vs. on-
+demand instances (pay-as-you-go) impacts costs. 
+o Analyze workload patterns to optimize instance types. 
+6. Third-Party Services and Marketplace Apps: 
+o Integrating third-party services or using marketplace apps adds to 
+expenses. 
+o Regularly review and prune unused services. 
+7. Monitoring and Logging: 
+o Enabling detailed monitoring and logging can increase costs. 
+o Balance visibility with cost considerations. 
+ 
+COST OPTIMIZATION STRATEGIES: RIGHTSIZING RESOURCES 
+
+--- Page 30 ---
+ Rightsizing resources in the cloud involves adjusting the allocation of 
+computing, storage, and database resources to match the actual needs of 
+workloads.  
+ This helps reduce costs by eliminating over-provisioning and under-
+utilization. Here are detailed strategies for rightsizing these resources: 
+Virtual Machines (VMs) 
+1. Monitoring and Analysis 
+ Utilize Cloud Provider Tools: Leverage tools like AWS Cloud Watch, 
+Azure Monitor, and Google Cloud Operations Suite to monitor CPU, 
+memory, and disk I/O metrics. 
+ Analyze Usage Patterns: Identify VMs that are consistently underutilized 
+or over utilized. 
+2. Auto-Scaling 
+ Dynamic Scaling: Implement auto-scaling to automatically adjust the 
+number of VMs based on current demand, ensuring you only use and pay 
+for the resources needed at any given time. 
+3. Instance Types 
+ Match Workload Requirements: Choose appropriate instance types 
+based on the specific needs of your applications (e.g., compute-optimized 
+for 
+CPU-intensive 
+tasks, 
+memory-optimized 
+for 
+RAM-heavy 
+applications). 
+ Regular Review: Periodically review and adjust instance types as 
+workloads change. 
+ 4. Reserved Instances and Savings Plans 
+ Long-Term Savings: Purchase reserved instances or savings plans for 
+predictable workloads to benefit from lower rates compared to on-demand 
+pricing. 
+ Spot Instances: Use spot instances for non-critical workloads to take 
+advantage of significant cost savings. 
+5. Idle Resource Identification 
+
+--- Page 31 ---
+ Terminate Idle Instances: Use tools like AWS Trusted Advisor to 
+identify and shut down idle or zombie instances. 
+6. Right-Sizing Recommendations 
+ Follow 
+Cloud 
+Provider 
+Recommendations: 
+Utilize 
+built-in 
+recommendations from cloud providers to adjust instance sizes based on 
+actual usage data. 
+Storage 
+1. Data Lifecycle Management 
+ Automate Data Movement: Implement lifecycle policies to move data to 
+lower-cost storage tiers as it ages (e.g., AWS S3 lifecycle policies). 
+ Archive Infrequent Data: Use archival storage options like AWS Glacier 
+or Azure Cool Blob Storage for data that is rarely accessed. 
+ 2. Storage Classes 
+ Choose Appropriate Classes: Select storage classes based on access 
+frequency and performance needs. Regularly review and adjust as 
+necessary. 
+3. Snapshots and Backups 
+ Clean Up Regularly: Delete old snapshots and backups that are no longer 
+needed to free up space and reduce costs. 
+ Incremental Backups: Utilize incremental backups to minimize storage 
+usage. 
+4. Compression and Deduplication 
+ Enable Features: Use data compression and deduplication to reduce the 
+amount of storage needed. 
+5. Thin Provisioning 
+ On-Demand Allocation: Implement thin provisioning to allocate storage 
+on an as-needed basis, avoiding the cost of pre-allocated storage that isn't 
+fully utilized. 
+Databases 
+
+--- Page 32 ---
+1. Right-Sizing Database Instances 
+ Monitor Performance Metrics: Adjust database instance sizes based on 
+CPU, memory, and disk I/O metrics. 
+ Horizontal Scaling: Consider horizontal scaling (e.g., sharding) for better 
+resource distribution and cost efficiency. 
+2. Storage Optimization 
+ Data Clean-Up: Regularly remove old or unnecessary data to reduce 
+storage costs. 
+ Schema and Index Optimization: Optimize database schemas and 
+indexes to improve performance and reduce storage needs. 
+3. Database Engine Choice 
+ Select Cost-Effective Engines: Choose the appropriate database engine 
+for your workload (e.g., NoSQL for unstructured data, relational for 
+structured data). 
+ Managed Services: Evaluate managed database services for built-in 
+optimization features. 
+4. On-Demand vs. Reserved Instances 
+ Predictable Workloads: Use reserved instances for databases with 
+predictable usage to take advantage of lower pricing. 
+ Variable Workloads: For variable workloads, consider on-demand or 
+burstable instances. 
+5. Scaling Strategies 
+ Auto-Scaling: Implement auto-scaling where supported to automatically 
+adjust resources based on demand. 
+ Read Replicas: Use read replicas to offload read-heavy operations, 
+improving performance without over-provisioning primary instances. 
+6. Performance Tuning 
+ Query Optimization: Regularly tune database queries and configurations 
+to ensure optimal performance and cost efficiency. 
+
+--- Page 33 ---
+ Monitor and Address Bottlenecks: Use monitoring tools to identify and 
+resolve performance bottlenecks. 
+General Best Practices 
+1. Cost Monitoring and Alerts 
+ Set Up Monitoring: Use cost management tools like AWS Cost Explorer, 
+Azure Cost Management, and Google Cloud Billing Reports to track 
+spending and set up alerts for anomalies. 
+2. Regular Reviews 
+ Conduct Regular Reviews: Periodically review resource usage and costs 
+to ensure resources are optimally allocated. 
+ Continuous Improvement: Iterate on optimization strategies based on 
+feedback and changing requirements. 
+3. Tagging and Resource Management 
+ Implement Tagging Strategy: Use a robust tagging strategy to track and 
+manage resources effectively. 
+ Cost Allocation: Use tags to allocate costs to specific departments, 
+projects, or teams for better visibility and accountability. 
+By implementing these strategies, organizations can optimize their cloud resource 
+usage, reduce costs, and maintain high performance and availability. 
+ 
+ 
+ 
+CLOUD COST MANAGEMENT TOOLS 
+AWS Cost Explorer 
+Cost and Usage Visualization 
+ AWS Cost Explorer provides users with visual representation of their AWS 
+cost and usage over time, using graphs and tables.  
+ Visualization simplifies analysis of complex cost and usage data, 
+facilitating quick insights and informed decisions. 
+
+--- Page 34 ---
+ 
+Filter and Group 
+ You can filter and group your data by a variety of dimensions. For example, 
+you can view your daily/monthly cost grouped by member accounts to 
+understand who is driving your most cost.  
+ Additionally, you can group your cost by services to view top 9 cost-
+accruing AWS services in the Cost Explorer graph and view detailed 
+breakdown of cost per service in the table;  
+ you can also filter cost by a specific service to understand how the spend 
+for that service has changed over a period of time.  
+ 
+ 
+Cost and usage Forecasting 
+ AWS Cost Explorer can predict future costs and usage based on your 
+historical and current cost and usage pattern.  
+ This helps organizations plan and budget for upcoming expenses. 
+
+--- Page 35 ---
+ 
+Saved Reports 
+ Cost Explorer provides preconfigured reports to monitor monthly cost by 
+service, monthly cost by linked account, monthly EC2 running hours costs 
+and usage, Daily costs, and AWS Marketplace costs.  
+ Additionally, customers can save custom Cost Explorer reports along with 
+their filters and groupings for easy access. 
+ 
+Multi-year history 
+ Users can perform multi-year historical data analysis at monthly 
+granularity using up to 38 months of history and understand patterns and 
+year-over-year changes in their AWS cost and usage.  
+
+--- Page 36 ---
+ 
+Hourly granularity 
+ Cost Explorer allows customers to understand their spend for the past 14 
+days at the most granular hourly level.  
+ You can monitor your hourly cost and usage to determine appropriate 
+SP/RI commitment or understand peak hour usage.  
+ 
+Resource level granularity 
+ Cost Explorer allows customers to monitor their AWS cost and usage at a 
+resource level to identify cost drivers.  
+ Cost Explorer supports resource level data for all services at daily 
+granularity and EC2 resource level data at hourly granularity.  
+ Customers can enable this additional data for the past 14 days.  
+
+--- Page 37 ---
+ 
+Download your CE view in csv format 
+ You can download your filtered CE view in CSV file format for offline 
+access as well as easy sharing with other team members.  
+API access 
+ AWS Cost Explorer provides programmatic access to all features through 
+API, enabling automation of Cost Management tasks.  
+ 
+Azure Cost Management 
+ Azure Cost Management is a free solution offered to Azure cloud 
+customers via the Azure portal. It provides information about your overall 
+costs and utilization across all Azure services and Azure Marketplace 
+products. The solution provides insights and reports, and can also provide 
+data about your organization’s use of other cloud providers.  
+ Once enabled, Azure Cost Management continuously monitors your 
+resources and provides ongoing reports. You can integrate Azure Cost 
+Management with Azure Advisor, and gain cost recommendations tailored 
+to your usage. To further customize your cost management, you can 
+use REST APIs and integrate with Microsoft Power BI. 
+Benefits of Microsoft Azure Cost Management 
+ Azure cost management can have two key benefits for your organization: 
+gaining visibility over cloud spending, and helping you map costs to 
+specific departments or initiatives. 
+Monitor and Optimize Azure Costs 
+ Azure Cost Management lets you analyze past cloud usage and expenses, 
+and predict future expenses. You can view costs in a daily, monthly, or 
+annual trend, to identify trends and anomalies, and find opportunities for 
+optimization and savings.  
+ This data comes directly from Azure so it shows the actual units on which 
+your Azure bill is based. 
+
+--- Page 38 ---
+Map Cloud Costs to Departments or Initiatives 
+ Azure Cost Management classifies your resources into multiple buckets 
+using the concept of cost entities. A cost entity is a department or project 
+in your organization that pays for Azure services. You can also create a 
+cost model that structures resources according to tags that teams have 
+applied to the actual Azure resources.  
+ Once you have correctly defined cost entities and models, teams can use 
+Azure Cost Management to view and investigate costs associated with their 
+specific project budgets. You can also set budgets and alerts to warn or 
+limit overuse for projects, teams, or specific users. 
+  
+ Azure Cost Management is designed to help organizations find 
+underutilized resources, eliminate waste and reduce costs. 
+ 4 Ways to Optimize Azure Costs with Azure Cost Management and 
+Related Tools 
+Cost Analysis Report 
+The Cost Analysis report in Azure Cost Management allows you to analyze your 
+organization’s costs in detail, segmenting costs using Azure resource attributes. 
+Here are a few examples of questions you can answer with the cost analysis 
+report: 
+ What will be the costs for the current month? See how much you have 
+spent and whether different cost entities are within their budget. 
+ Have there been cost anomalies? Check abnormal use of services or cost 
+surges, and check that costs are within a reasonable range and appropriate 
+for normal use. 
+ Is the invoiced amount as expected? Check your Azure bill against actual 
+usage of services and verify that billing is as you expected. See if there 
+were significant changes from previous months and investigate them. 
+ How can we split costs between departments/cost entities? Check how 
+Azure costs should be distributed across organizational units, projects, or 
+individuals. 
+ 
+
+--- Page 39 ---
+Source: Azure 
+Azure Budgets 
+ The Budgets function within Azure Cost Management lets you set a budget 
+for Azure services, based on cost or usage.  
+ You should revisit budgets on a regular basis to see if specific budgets have 
+run out and make changes as needed.  
+ Azure Budget also allows you to configure automated triggers for better 
+cloud governance. So for example, when certain budget thresholds are 
+reached, you can configure a service to shut down VMs when the budget 
+is exceeded.  
+ You can also switch your infrastructure to different service tiers based on 
+budget triggers. 
+ 
+Source: Azure 
+Azure Pricing Calculator 
+ Azure Pricing Calculator is commonly used alongside Azure Cost 
+Management, to evaluate pricing for different combinations of Azure 
+services.  
+ This is valuable when deploying new workloads in Azure, or significantly 
+expanding existing workloads.  
+ There are many ways to run a specific application or service in Azure, and 
+different services, service tiers or options can have a major effect on costs.  
+ You can use the Pricing Calculator to simulate costs for different 
+configurations, and understand pricing for future use of Azure. 
+
+--- Page 40 ---
+ 
+Azure Advisor 
+Azure Advisor is a service that can identify opportunities for cost savings on 
+Azure, including: 
+ Underutilized virtual machines, especially in terms of CPU or network 
+utilization. You can then decide whether to shut down or resize the VMs. 
+ Purchasing Reserved Instances (RIs) for VMs that have been running 
+consistently for  a long period of time. 
+ Removing unused network resources such as ExpressRoute circuits, 
+virtual network gateways or public IPs. 
+ Optimize database use by right-sizing MariaDB, MySQL or PostgreSQL 
+instances. 
+ 
+ 
+ 
+ 
+ 
