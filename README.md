@@ -150,5 +150,4 @@ Sai Navadheer Reddy
 Computer Science Engineering Student
 
 💼 LinkedIn
-🐙 GitHub
 📧 Email
