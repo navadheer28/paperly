@@ -103,3 +103,73 @@ Paperly
 │   └── package.json
 │
 └── .gitignore
+
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/navadheer28/paperly.git
+cd paperly
+2. Install frontend dependencies
+cd frontend
+npm install
+3. Start the frontend
+npm run dev
+4. Install backend dependencies
+
+Open another terminal:
+
+cd backend
+npm install
+5. Configure environment variables
+
+Create a .env file inside the backend directory and add the required API credentials.
+
+Example:
+
+GROQ_API_KEY=your_api_key_here
+PORT=5000
+
+Important: Never commit your real API keys or .env file to GitHub.
+
+6. Start the backend
+node index.js
+🔐 Security
+API keys are managed through environment variables.
+Sensitive credentials are kept outside the source code.
+Uploaded files are processed through the backend.
+Generated files are returned through backend endpoints.
+.env files are excluded from version control.
+🎯 Project Goals
+
+Paperly was developed to bring commonly used PDF operations and AI-powered document features into a single web application.
+
+The project demonstrates:
+
+Full-stack web development
+REST API development
+File upload and processing
+Python integration with Node.js
+AI API integration
+PDF manipulation
+OCR-based document processing
+Frontend routing and component development
+WebSocket-based communication
+Modern responsive UI development
+🔮 Future Improvements
+User authentication
+Cloud file storage
+Improved document privacy
+More AI models
+Batch document processing
+Better mobile responsiveness
+Automated testing
+CI/CD pipeline
+Advanced document management
+👨‍💻 Author
+
+Sai Navadheer Reddy
+
+Computer Science Engineering Student
+
+💼 LinkedIn
+🐙 GitHub
+📧 Email
