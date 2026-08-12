@@ -74,8 +74,8 @@ Paperly is a full-stack web application that provides a collection of PDF utilit
 
 ### AI
 
-* Groq API
-* Llama 3.3 70B model
+• Claude AI
+• AI-powered document processing
 
 ---
 
