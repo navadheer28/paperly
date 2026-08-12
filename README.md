@@ -75,6 +75,7 @@ Paperly is a full-stack web application that provides a collection of PDF utilit
 ### AI
 
 • Claude AI
+
 • AI-powered document processing
 
 ---
